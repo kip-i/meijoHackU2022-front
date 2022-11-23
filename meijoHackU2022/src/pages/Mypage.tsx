@@ -34,14 +34,17 @@ function Mypage() {
   return (
     <Box style={{textAlign: 'center'}}>
       <Box style={{padding:'10px'}}>
-        <Image src={reactLogo} alt='Avatar' style={{margin: '0 auto', border:'3px solid'}} boxSize={'30vw'} />
+        <Image src={reactLogo} alt='Avatar' style={{margin: '0 auto', border:'3px solid'}} boxSize={'8rem'} />
       </Box>
       <Text fontSize='4xl'>{name}</Text>
       <Text fontSize='4xl'>Lv.{level}</Text>
       <Box style={{width:'80%', margin:'0 auto'}} >
         <Progress value={(totalExperience%perLevelup)} max={perLevelup} colorScheme={'twitter'} />
-        総経験値 : {totalExperience%perLevelup},
-        Lv.UPまで : {perLevelup-(totalExperience%perLevelup)}
+        <Text style={{padding:'0.4rem'}} >
+          総経験値 : {totalExperience%perLevelup},
+          あと : {perLevelup-(totalExperience%perLevelup)}
+        </Text>
+        
       </Box>
       <Box style={{borderTop:'3px solid',borderBottom:'3px solid',width:'90%',margin:'10px auto'}}>
         <Text fontSize='2xl'>過去の投稿</Text>
