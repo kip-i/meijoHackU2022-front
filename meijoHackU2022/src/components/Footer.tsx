@@ -43,7 +43,6 @@ const Footer: FC = () => {
             <Link href={'#'}><FaList size={'2rem'} style={{margin:'0 auto'}} />タスク</Link>
             <Link href={'#'}><FaSearch size={'2rem'} style={{margin:'0 auto'}} />検索</Link>
           </Stack>
-          <Text>© 2022 KK. All rights reserved</Text>
         </Container>
       </Box>
     );
